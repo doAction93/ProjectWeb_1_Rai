@@ -1,0 +1,9 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;}

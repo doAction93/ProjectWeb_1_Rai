@@ -1,0 +1,548 @@
+.Servicesgroup{
+    
+    
+    width: 100%;
+    .Services{
+        background-color: #DEE5EB;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+        
+        .Servicestext{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+            width: 100%;
+            gap: 50px;
+            .Servicesimg{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin:0 auto;
+                    width: 30vw;
+                
+                    
+                }
+            }
+            .Servicestextgroup{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+                .Servicestxt{
+                    font-size: 17px;
+                }       
+            }
+        }
+       
+    }
+}
+.dashboardmain{
+    width: 100%;
+    height: 80vh;
+    background-color:#225378 ;
+    
+    .dashboardgroup{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:20px;
+        align-items: center;
+        color: white;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .dashboardimg{
+            width:50%;
+            
+            .dashboardactive{
+                
+                margin: 0 auto;
+                width:80%;
+                height: 100%;
+                   img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                
+            }
+        }
+        
+       
+        .dashboardgroupimg{
+            width:50%;
+            
+            .spantxt{
+                margin-bottom: 20px;
+            }
+            .dashboardtxtgroup{
+                display: flex;
+                flex-direction: column !important;
+            
+               
+                &:active{
+                    
+                }
+                
+                .dashboardflex{
+                    list-style:circle;
+                    .dashboardtxtmain{
+                        font-size: 28px;
+                    }
+                    .dashboardtxt{
+                    }
+                }
+            }
+            .line{
+                border-bottom: 1px solid white;
+                margin: 30px 0;
+            }
+        }
+    }
+    
+
+
+
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-image: url('../../../public/img/contact.png');   
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+        z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+      }
+    .contactContainer{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .contacttitle{
+            padding-top: 200px;
+            text-align: center;
+            color: white;
+            b{
+                font-size: 32px;
+            }
+            .contacttxt{
+                font-size: 17px;
+                margin-bottom:30px;
+            }
+            .contactPost{
+                .contactMail{
+                    width: 40%;
+                    font-size: 17px;
+                    border: 0px;
+                    padding: 15px;
+                    border-radius: 5px 0 0 5px;
+                }
+               
+                .contactSubmit{
+                    font-size: 17px;
+                    width: 20%;
+                    border: 0px;
+                    padding: 15px;
+                    border-radius: 0 5px 5px 0;
+                    background-color: #1C9AEA;
+                    color: white;
+                    a{color: white;}
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 780px) {
+    .Servicesgroup {
+        width:100%;
+        .Services {
+            height: 60vh;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .Servicestext{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+                width: 100%;
+                gap: 0px;
+                .Servicesimg{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                   
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin:0 auto;
+                        width: 60vw;
+                    
+                        
+                    }
+                }
+                .Servicestextgroup{
+                    width:100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+                    .Servicestxt{
+                        font-size: 17px;
+                    }       
+                }
+            }
+        }
+    }
+    .dashboardmain{
+        width: 100%;
+        height:100vh;
+        background-color:#225378 ;
+        
+        .dashboardgroup{
+            height: 80vh;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            
+            align-items: center;
+        
+            
+    
+            .dashboardimg{
+               height: 100%;
+               width:100%;
+               position: relative;
+               margin-top: 100px;
+               left:0;
+               right:0;
+              
+                .dashboardactive{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    position:absolute;
+                    height: 100%;
+                    width:100%;
+                       img{
+                        width: 80%;
+                        object-fit: contain;
+                            
+                            height: 100%;
+                        }
+                    
+                }
+            }
+            
+           
+            .dashboardgroupimg{
+                text-align: center;
+                width:100%;
+                .spantxt{
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .dashboardtxtgroup{
+                    display: flex;
+                    flex-direction: column !important;
+                
+                   
+                    &:active{
+                        
+                    }
+                    
+                    .dashboardflex{
+                        list-style:circle;
+                        .dashboardtxtmain{
+                            font-size: 20px;
+                        }
+                        .dashboardtxt{
+                        }
+                    }
+                }
+                .line{
+                    border-bottom: 1px solid white;
+                    margin: 30px 0;
+                }
+            }
+        }
+        
+    }
+    .contact{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-position: center; 
+        background-image: url('../../../public/img/contact.png');   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
+                }
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contactMail{
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 95%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:380px){
+    .Servicesgroup {
+        
+        .Services {
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            
+            .Servicestext{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+                width: 100%;
+                gap: 0px;
+                .Servicesimg{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                   
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin:0 auto;
+                        width: 70vw;
+                    
+                        
+                    }
+                }
+                .Servicestextgroup {
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    .Servicestxt {
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .dashboardmain{
+        width: 100%;
+        height: 100%;
+        background-color:#225378 ;
+        
+        .dashboardgroup{
+            height: 70vh;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            
+            align-items: center;
+        
+            
+    
+            .dashboardimg{
+               height: 100%;
+               width:100%;
+               position: relative;
+               margin-top: 100px;
+               left:0;
+               right:0;
+                .dashboardactive{
+                   
+                    position:absolute;
+                    height: 100%;
+                    width:100%;
+                       img{
+                        object-fit: contain;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    
+                }
+            }
+            
+           
+            .dashboardgroupimg{
+                width:100%;
+                
+                .spantxt{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                }
+                .dashboardtxtgroup{
+                    
+                    display: flex;
+                    flex-direction: column !important;
+                
+                   
+                    &:active{
+                        
+                    }
+                    
+                    .dashboardflex{
+                        
+                        list-style:circle;
+                        text-align: center;
+                        .dashboardtxtmain{
+                            font-size: 15px;
+                            
+                        }
+                        .dashboardtxt{
+                        }
+                    }
+                }
+                .line{
+                    border-bottom: 1px solid white;
+                    margin: 30px 0;
+                }
+            }
+        }
+        
+    }
+    .contact{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-position: center; 
+        background-image: url('../../../public/img/contact.png');   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
+                }
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contactMail{
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 98%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
+                }
+            }
+        }
+    }
+}
+

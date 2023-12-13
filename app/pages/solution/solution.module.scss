@@ -1,0 +1,268 @@
+.solution_section {
+    .solution1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            margin-bottom: 16px;
+            font-size: 32px;
+            color: #202D3F;
+        }
+
+        p {
+            width: 45%;
+            font-size: 17px;
+        }
+    }
+
+    .solution2 {
+        nav {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            gap: 50px;
+            margin-bottom: 50px;
+
+            a {
+                cursor: pointer;
+                font-size: 24px;
+                padding: 10px 16px;
+                color: #4D5765;
+            }
+            a.active{
+                border-bottom: 3px solid #5FB8F0;
+            }
+        }
+    }
+
+    .soultion3 {
+        margin-bottom:50px;
+        div {
+            width: 95%;
+            margin: 0 auto;
+
+            ul {
+                
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                li {
+                    box-shadow: 1px 1px 1px 1px #f2efef;
+                    width: 18%;
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+
+                    img {
+                        width: 20%;
+                    }
+                    span{
+                        font-size: 17px;
+                        color: #202D3F;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #B2B7BD;
+
+                    }
+                    a{
+                        width: 100%;
+                        font-size: 14px;
+                        color: #5FB8F0;
+                        border-top: 1px solid #E1F1FC;
+                        border-bottom: 1px solid #E1F1FC;
+                        padding: 11px 10px;
+                        text-align: center;
+                    }
+                }
+                .more{
+                    box-shadow: 1px 1px 1px 1px #f2efef;
+                    background-color: #202D3F;
+                    color: white;
+                    padding: 18px 16px;
+                    >span{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .contact{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-image: url('../../../public/img/contact.png') !important;   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
+                }
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    .contactMail{
+                        width: 40%;
+                        font-size: 17px;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 5px 0 0 5px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 20%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:380px) {
+    .solution_section{
+       .solution1{
+        width: 90%;
+        margin: 0 auto;
+
+        h3{
+            font-size: 24px;
+        }
+        p{
+            width: 100%;
+            font-size: 14px;
+        }
+       }
+       
+       .solution2{
+        nav{
+            gap: 10px;
+            a{
+                font-size: 17px;
+                padding: 10px 5px;
+            }
+        }
+       }
+
+       .soultion3{
+        div{
+            ul{
+                margin-top: 10px;
+                gap: 20px;
+                justify-content: space-around;
+                li{
+                    width: 33%;
+                    box-shadow: 1px 1px 1px 1px #f2efef;
+                    img{
+                        width: 50%;
+                    }
+                    span{
+                        font-size: 17px;}
+                    p{
+                        font-size: 14px;
+                    }
+                    a{}
+                   
+                }
+            }
+        }
+       
+       }
+       
+       .contact{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-position: center; 
+        background-image: url('../../../public/img/contact.png');   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
+                }
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contactMail{
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 98%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
+                }
+            }
+        }
+    }
+}
+}

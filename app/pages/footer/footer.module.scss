@@ -1,0 +1,322 @@
+.footer{
+    
+    .logogroup{
+        padding-left: 50px;
+    
+        display: flex;
+        justify-content: space-between;
+        .topbtngroup{
+            text-align: center;
+            
+            a{}
+            .footermediaup{
+                color: #9BD2F5;
+                display: none;
+            }
+            .logo{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                img{
+                    margin: 0 35px 10px 0;
+                }
+                .sns{
+                    img{
+                        margin-right: 30px;
+                    }
+                }
+            }  
+        }
+        .footermenugroup{
+            padding-right: 50px;
+            display: flex;
+            justify-content: flex-end;
+            .footermenu{
+                display: flex;
+                flex-direction: column;
+                margin-right: 70px;
+                b{
+                    margin-bottom: 10px;
+                }
+                a{
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .footertopLink{
+                text-decoration: none;
+                list-style: none;
+                color: #9BD2F5;
+                transition: 2s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                scroll-behavior: smooth;
+                .footertop{
+                    transform: rotateX(360deg)rotateZ(270deg);
+                    .footerstraight{
+                        transform: rotateZ(90deg);
+                        color: #9BD2F5;
+                    }
+                }
+                .footerup{
+                    writing-mode: vertical-rl;
+                    transform: rotateZ(180deg);
+                }
+                .footermediaup{
+                    display: none;
+                }
+            }
+        }
+        .footerfooteraccodian{
+            display: none;
+        }
+    } 
+}
+@media(max-width:1200px) {
+    .footer{
+        margin-left: 20px;
+        .logogroup{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            .topbtngroup{
+                text-align: center;
+                
+                a{}
+                .footermediaup{
+                    display: block;
+                    color: #9BD2F5;
+                }
+                .logo{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    img{
+                        margin: 10px 35px 10px 0;
+                    }
+                    .sns{
+                        img{
+                            margin-right: 30px;
+                        }
+                    }
+                }  
+            }
+            .footermenugroup{
+                display: none;
+                justify-content: flex-end;
+                .footermenu{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 70px;
+                    b{
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .footertopLink{
+                    .footertop{
+                        display: none;
+                        .footerstraight{
+
+                        }
+                    }
+                    .footerup{
+                        display: none;
+                    }
+                    .footermediaup{
+                        display: flex;
+                    }
+                }
+            }
+            .footerfooteraccodian{
+                display: flex;
+                .footeraccodiangroup{
+                    .footeraccodianlist{
+                    }
+                    .footeraccodiantitle{
+                        font-weight: bold;
+                    }
+                    span{
+                        display: flex;
+                        
+                        a{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+@media(max-width:780px) {
+    .footer{
+        margin-left: 20px;
+        .logogroup{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            .topbtngroup{
+                text-align: center;
+                
+                a{}
+                .footermediaup{
+                    display: block;
+                    color: #9BD2F5;
+                }
+                .logo{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    
+                    img{
+                    
+                        margin: 10px 35px 10px 0;
+                    }
+                    .sns{
+                        img{
+                            margin-right: 30px;
+                        }
+                    }
+                }  
+            }
+            .footermenugroup{
+                display: none;
+                justify-content: flex-end;
+                .footermenu{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 70px;
+                    b{
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .footertopLink{
+                    .footertop{
+                        display: none;
+                        .footerstraight{
+
+                        }
+                    }
+                    .footerup{
+                        display: none;
+                    }
+                    .footermediaup{
+                        display: flex;
+                    }
+                }
+            }
+            .footerfooteraccodian{
+                display: flex;
+                .footeraccodiangroup{
+                    .footeraccodianlist{
+                    }
+                    .footeraccodiantitle{
+                        font-weight: bold;
+                    }
+                    span{
+                        display: flex;
+                        
+                        a{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+@media(max-width:390px){
+    .footer{
+        
+        .logogroup{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            width:100%;
+            .topbtngroup{
+                text-align: center;
+                
+                a{}
+                .footermediaup{
+                    display: block;
+                    color: #9BD2F5;
+                }
+                .logo{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    
+                    > img{
+                         width:40%; 
+                    }
+                    .sns{
+                        img{
+                            margin-right: 30px;
+                        }
+                    }
+                }  
+            }
+            .footermenugroup{
+                display: none;
+                justify-content: flex-end;
+                .footermenu{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 70px;
+                    b{
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .footertopLink{
+                    .footertop{
+                        display: none;
+                        .footerstraight{
+
+                        }
+                    }
+                    .footerup{
+                        display: none;
+                    }
+                    .footermediaup{
+                        display: flex;
+                    }
+                }
+            }
+            .footerfooteraccodian{
+                display: flex;
+                .footeraccodiangroup{
+                    .footeraccodianlist{
+                    }
+                    .footeraccodiantitle{
+                        font-weight: bold;
+                    }
+                    span{
+                        display: flex;
+                        
+                        a{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    
+}

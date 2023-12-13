@@ -1,0 +1,69 @@
+.error_section {
+    article {
+        display: flex;
+        align-items: center;
+
+        .error_img {
+            width: 100%;
+            height: 100vh;
+            background: url('../../../public/error/error.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            overflow: hidden;
+        }
+        .error_contents {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            span {
+                font-size: 60px;
+                color: #202D3F;
+            }
+            p{
+                font-size: 17px;
+                color: #B2B7BD;
+            }
+            a {
+                padding: 10px 15px;
+                border: 1px solid white;
+                border-radius: 20px;
+                color: #5FB8F0;
+                box-shadow: 2px 2px 2px 2px #f8eded;
+                transition: 0.5s;
+                &:hover{
+                background-color: #5FB8F0;
+                border: 1px solid #5FB8F0;
+                color: white;
+                box-shadow: none;
+            }
+            }
+        }
+
+    }
+}
+
+@media (max-width:380px) {
+    .error_section{
+    
+        article{
+            flex-direction: column;
+            .error_img{
+                height: 60vh;
+            }
+            .error_contents{
+                span{
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 10px;
+                }
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

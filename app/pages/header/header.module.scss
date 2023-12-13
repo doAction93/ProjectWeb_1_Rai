@@ -1,0 +1,330 @@
+.header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        .img {
+            width: 20%;
+            height: 100%;
+        }
+    }
+
+    .menu {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            margin: 0 15px 0px;
+        }
+
+        >:nth-child(7) {
+            border-radius: 5px;
+            padding: 12px 25px;
+            background-color: #1C9AEA;
+            color: white;
+        }
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .menu1 {
+        display: none;
+    }
+}
+
+.menuItem {
+    text-align: center;
+    position: relative;
+
+    .subMenu {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 300px;
+        height: 150px;
+        background-color: #ebecef;
+        border: 1px solid #1C9AEA;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 0.2px rgb(4, 4, 4, 0.1);
+        padding: 10px;
+        .fistBtn{
+            height:100%;
+        }
+        .secondBtn{
+            height:100%;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            color: rgb(4, 4, 4);
+        }
+    }
+
+    &:hover {
+        .subMenu {
+            display: block;
+        }
+    }
+}
+
+.menuOptions {}
+
+.menuOptionsOverlay {
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .header {
+        align-items: center;
+        margin-top: 25px;
+        .logo {
+            width: 40%;
+            height: 100%;
+            .img {
+                width: 70%;
+                height: 100%;
+            }
+        }
+
+        .menu {
+            margin: 10px 25px;
+
+            a {
+                display: none;
+                text-decoration: none;
+                color: black;
+                margin-right: 15px;
+            }
+
+            >:nth-child(7) {
+                border-radius: 5px;
+                padding: 12px 25px;
+                background-color: #1C9AEA;
+                color: white;
+            }
+        }
+
+        .menubar {
+            display: block;
+            width: 5%;
+            margin-right: 10px;
+        }
+
+        .menu1 {
+            display: block;
+        }
+    }
+
+    .menuOptionsOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menuOptions {
+        width: 100%;
+        height: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        div {
+            margin: 20px;
+        }
+
+        >:nth-child(9) {
+            width: 90%;
+            background-color: #1C9AEA;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0px;
+        }
+    }
+}
+
+
+@media(max-width:780px) {
+    .header {
+        align-items: center;
+        margin: 15px;
+        .logo {
+            width: 50%;
+            height: 100%;
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .menu {
+            margin: 10px 25px;
+
+            a {
+                display: none;
+                text-decoration: none;
+                color: black;
+                margin-right: 15px;
+            }
+
+            >:nth-child(7) {
+                border-radius: 5px;
+                padding: 12px 25px;
+                background-color: #1C9AEA;
+                color: white;
+            }
+        }
+
+        .menubar {
+            display: block;
+            width: 5%;
+            margin-right: 10px;
+        }
+
+        .menu1 {
+            display: block;
+        }
+    }
+
+    .menuOptionsOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menuOptions {
+        width: 100%;
+        height: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        div {
+            margin: 20px;
+        }
+
+        >:nth-child(9) {
+            width: 90%;
+            background-color: #1C9AEA;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0px;
+        }
+    }
+}
+
+@media(max-width:390px) {
+    .header {
+        align-items: stretch;
+        .logo {
+            width: 100%;
+            height: 100%;
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .menu {
+            margin: 10px 25px;
+
+            a {
+                display: none;
+                text-decoration: none;
+                color: black;
+                margin-right: 15px;
+            }
+
+            >:nth-child(7) {
+                border-radius: 5px;
+                padding: 12px 25px;
+                background-color: #1C9AEA;
+                color: white;
+            }
+        }
+
+        .menubar {
+            display: block;
+            width: 10%;
+            margin-right: 10px;
+        }
+
+        .menu1 {
+            display: block;
+        }
+    }
+
+    .menuOptionsOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menuOptions {
+        width: 100%;
+        height: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        div {
+            margin: 20px;
+        }
+
+        >:nth-child(9) {
+            width: 90%;
+            background-color: #1C9AEA;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0px;
+        }
+    }
+}
